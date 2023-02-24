@@ -1,0 +1,27 @@
+1.web三要素：
+浏览器：网页运行在浏览器上
+服务器：网页存储在服务器上
+http通信协议
+2.web技术三项:
+HTML :超文本标记语言（hyper markup language）
+CSS:层叠样式表
+JavaJcript:动态的修饰html页面
+3.HTML
+  (Ctrl+N新建）（Ctrl+S保存）（save as另存为）（Ctrl+? 注释）
+（F5：刷新）（ctrl+x剪切）（ctrl+z撤销）
+后缀以.html或者.htm结尾
+唯一的根元素：html
+网页配置 head （title网页标题；meta网页编码；）
+网页内容 body
+标题标签：h,一共六级
+段落标签：p（双标签）
+实体符：大于号&gt，小于号&lt,版权符&copy,商标符&reg,和符号&amp;
+             双引号&quot,空格&nbsp;
+行内元素：span,b,i,del,u,strong;
+块级元素：div
+列表：有序列表ol，无序列表ul,项目li;定义列表dl,定义标题dt,定义内容dd;
+预格式化：pre
+分割线：hr 换行符：br
+border:边框。cellspacing:单元格距离。
+readonly：只读模式
+

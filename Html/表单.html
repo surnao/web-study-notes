@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- 表单：是让用户提交数据的手段 表单元素：声明数据提交的范围 表单控件：用来让用户输入数据 -->
+	<!-- 表单用form表示，只有在这个范围之内的数据才能提交给服务器 
+		action:网页提交的url  method:网页提交的方式  -->
+	<form action="http:\\www.baidu.cn">
+		<table border="1" cellspacing="0" width="30%" >
+			<tr>
+				<th colspan="2">登陆界面</th>
+			</tr>
+			<tr>
+				<!-- 文本：text  -->
+				<th>用户名：</th>
+				<td>
+					<input type="text" name="" placeholder="手机号/邮箱/用户名" readonly/>
+				</td>
+			</tr>
+			<tr>
+				<!-- 密码：password  -->
+				<th>密码：</th>
+				<td>
+					<input type="password" name="" maxlength="8" autofocus="autofocus">
+				</td>
+			</tr>
+			</tr>
+			<tr>
+				<!--单选框：radio -->
+				<th>请选择您的性别</th>
+				<td>
+					<input type="radio" name="gender" >男
+					<input type="radio" name="gender" >女
+					<input type="radio" name="gender" checked/>不便透露
+				</td>
+			</tr>
+			<tr>
+				<!--多选框：checkbox -->
+				<th>请选择您的兴趣爱好</th>
+				<td>
+					<input type="checkbox" name="" >看书<br>
+					<input type="checkbox" name="" >听歌<br>
+					<input type="checkbox" name="" >追剧<br>
+					<input type="checkbox" name="" >上网<br>
+				</td>
+			</tr>
+			<tr>
+				<!-- 文件筐：file-->
+				<th>请选择：</th>
+				<td>
+					<input type="file" name="" >
+				</td>
+			</tr>
+			<tr>
+				<!--日期选择: date-->
+				<th>请选择日期：</th>
+				<td>
+					<input type="date" name="" >
+				</td>
+			</tr>
+			<tr>
+				<!--普通按钮：button -->
+				<th colspan="2">
+					<input type="button" name="" value="点我试试">
+				</th>
+			</tr>
+			<tr>
+				<!--重置按钮：reset -->
+				<th colspan="2">
+					<input type="reset" name="" value="重置按钮">
+				</th>
+			</tr>
+			<tr>
+				<!--提交按钮:submit -->
+				<th colspan="2">
+					<input type="submit" name="" value="提交按钮">
+				</th>
+			</tr>
+		</table>
+	</form>
+	<form action="http:\\tmooc.cn">
+		<h4>周类型:</h4>
+		<input type="week" name="">
+		<h4>月类型:</h4>
+		<input type="month" name="">
+		<h4>日期:</h4>
+		<input type="date" name="">
+		<h4>颜色拾取：</h4>
+		<input type="color" name="">
+		<h4>范围获取:</h4>
+		<input type="range" name="" min="50" max="60" value="58">
+	</form>
+</body>
+</html>
