@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS的特性</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h1{
+			color: purple; font-size: 55px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 1.继承性：大多数的样式规则都能够被继承（除了宽高） -->
+	<p style="font-family: 黑体">
+		<span>你好牛哦</span>
+	</p>
+	<!-- 2.层叠性：给元素内容叠加不同效果最终全部实现 -->
+	<p>
+		<h1>你饿吗</h1>
+	</p>
+	<!-- 优先级 -->
+	<p>
+		<h1 style="color: gray;">马上就要休息了</h1>
+	</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>盒子声明-Box</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- 盒子模型：定义元素的框处理元素内容之间的内边距以及外边距 -->
+	<style type="text/css">
+		div{
+			border: 1px red dashed;
+			width: 100px;height: 100px;
+		}
+		/*四边设置相同边距*/
+		#d1{
+			padding: 20px;
+			margin: 30px;
+		}
+		/*四边设置不同边距（两个元素相遇上下重叠，左右撑开）*/
+		#d2{
+			padding:10px 20px 30px 40px;
+			margin: 40px 30px 20px 10px;
+		}
+		/*单边设置不同边距*/
+		#d3{
+			padding-left: 20px;
+			margin-bottom: 40px; 
+		}
+		/*对边设置相同边距*/
+		#d4{
+			padding: 20px 40px;
+			margin: 30px 10px;
+		}
+		/*对边设置相同边距的特例*/
+		#d5{
+			margin: 20px auto;
+		}
+	</style>
+	<div id="d0">d0</div>
+	<div id="d1">d1</div>
+	<div id="d2">d2</div>
+	<div id="d3">d3</div>
+	<div id="d4">d4</div>
+	<div id="d5">d5</div>
+</body>
+</html>

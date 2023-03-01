@@ -1,0 +1,81 @@
+	/*给页面做统一设置*/
+	*{
+		margin: 0;padding: 0;
+	}	
+	/*给每一个区域加边框*/
+	div{
+		border: 1px red solid;margin: 0 auto; 
+	}
+	/*给每一个区域设置宽高*/
+	.logo{
+		width: 960px;height: 61px;
+		background-image: url(08.jpg);
+		text-align: right;line-height: 61px;
+	}
+	.core{
+		height: 410px;
+		/*在核心区上部（内部）预留10像素放渐变条*/
+		padding-top: 10px;width: 960px;
+		background: url(007.png) repeat-x top;
+	}
+	.content{
+		width: 950px;height: 390px;
+		border: 5px solid #8ac1db;
+		background-color: #e8f398;
+	}
+	/*给内容区里面的区域增加宽高*/
+	.content div{
+		width: 910px;height: 40px;
+	}
+	.content .data{
+		height: 310px;
+	}
+	.menu{
+		width: 960px;height: 61px;
+		background-color: #e488bb;
+	}
+	.copy{
+		width: 960px;height: 61px;
+	}
+	body{
+		background-color: #0ea8d8;
+		font-family: 黑体;
+		font-size: 14px;
+	}
+	.logo a{
+		color: #fff;
+		text-decoration: none;
+		margin-right:40px;
+	}
+	.logo a:hover{
+		font-weight: bold;
+	}
+	.copy{
+		text-align: center;
+		color: #fff;
+		line-height:30px;
+	}
+	.data table{
+		width: 100%;
+		margin:20px auto;
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	.data table td{
+		border: 1px solid #ccc;
+
+	}
+	.data thead tr{
+		background-color: #fbedce;
+		height: 40px;
+	}
+	.data tbody tr{
+		background-color: #fff;
+		height: 32px;
+	}
+	.data thead tr:hover{
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #fff;
+	}

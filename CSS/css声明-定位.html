@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>定位</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- 定位：作用是解决了元素的排列（摆放）问题
+	定位方法（五类）： 1.默认排列方式：块元素垂直排列，行内元素水平排列，称为流定位（流：元素有序排列而形成的队伍）
+	2.特殊定位方式： 2.1浮动定位：可以让块元素左右自由排列 2.2相对定位：可以让元素以自身为目标产生微小的偏移 2.3绝对定位：可以让元素以父级元素为目标产生巨大的偏移  2.4固定定位：可以让元素以窗口为目标产生巨大的偏移-->
+	<!-- 浮动定位 右浮动 -->
+	<style type="text/css">
+		#d0,p{
+			border: 1px solid red;
+			width: 400px;
+		}
+		#d1,#d2,#d3{
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+		#d1{
+			background-color: #f00;
+			float:right;
+		}
+		#d2{
+			background-color: #0f0;
+			float:right;
+		}
+		#d3{
+			background-color: #00f;
+			float:right;
+			/*clear:both;*/ 
+		}
+	</style>
+	<!-- 元素的右浮会导致父级元素内容的缺失而坍塌，浏览器认为文字重要性，会将文字完整显示 -->
+	<div id="d0">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+	</div>
+	<p>浮动的时候看我的位置</p>
+</body>
+</html>

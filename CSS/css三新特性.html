@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C3新特性</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 200px;height: 200px;
+			background-color: #f00;
+			margin: 200px auto;
+			/*过渡*/
+			/*transition：过渡属性 过渡时间 速度函数 延迟*/
+			transition:transform .3s linear; 
+		}
+		div:hover{
+			/*转换*/
+			/*平移*/
+			transform: translate(100px);
+			transform: translate(-100px);
+			/*缩放*/
+			transform: scale(1);
+			/*旋转*/
+			transform: rotate(360deg);
+			/*倾斜*/
+			transform: skew(45deg,45deg);
+			transform: translate(100px) rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

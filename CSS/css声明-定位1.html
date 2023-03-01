@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>定位 左浮</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<style type="text/css">
+		#d0,p{
+			border: 1px solid red;
+			width: 400px;
+		}
+		#d1,#d2,#d3{
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+		#d1{
+			background-color: #f00;
+			float: left;
+		}
+		#d2{
+			background-color: #0f0;
+			float: left;
+		}
+		#d3{
+			background-color: #00f;
+			float: left;
+			/*clear:both;*/ 
+		}
+	</style>
+	<!--  -->
+	<div id="d0">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+	</div>
+	<p>浮动的时候看我的位置</p>
+</body>
+</html>

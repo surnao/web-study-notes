@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选择器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*1.元素选择器：通过元素的名字来选择css作用的目标，如果一个页面中有多个相同元素需要使用此规则，建议使用此选择器*/ 
+		h2{
+			color: pink;
+		}
+		/*2.类选择器：通过class名字选择的（自定义的认为那些是同一类）*/
+		.a1{
+			font-size: 35px;
+		}
+		/*3.id选择器：一个HTML页面中，一个id账号只能用一次*/
+		#name{
+			color: gold;
+		}
+		/*4.选择器组，用,隔开*/
+		h2,#name{
+			font-size: 35px;
+		}
+		/*5.派生选择器：根据父级元素选择（子元素）*/
+		/*5.1后代选择器*/
+		#adress b{
+			color: red;
+		}
+		/*5.2子元素选择器*/
+		#adress>b{
+			font-size: 30px;
+		}
+		/*6.伪类选择器*/
+		/*6.1 link：向未被访问的超链接添加样式*/
+		a:link{
+			color: purple;
+		}
+		/*6.2 visited：向已被访问的超链接添加样式*/
+		a:visited{
+			color: green;
+		}
+		/*6.3 active:向被激活的元素添加样式*/
+		#a:active{
+			color: orange;
+		}
+		/*6.4 hover:鼠标悬停选择器*/
+		img:hover{
+			width: 200px;
+			height:150px;
+			/*pointer,crosshair,text,wait,default(默认）*/
+			cursor:pointer;
+		}
+		/*6.5 focus:当元素获取焦点的时候，向该元素添加样式*/
+		#b:focus{
+			background-color: yellow;
+		}
+		/*7.（*）任意选择器*/
+		*{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h2>明月松间照</h2>
+	<h2>清泉石上流</h2>
+	<h1 id="name">一去二三里</h1>
+	<p class="a1">一去二三里</p>
+	<p class="a1">烟村四五家</p>
+	<p class="a1">亭台六七座</p>
+	<p class="a1">八九十枝花</p>
+	<p id="adress">
+		<u>没有BUG的 <b>代码</b>是不完美的！</u>
+		<b>--Sodium_Sulfate</b>
+	</p>
+	<p>
+		<a href="http:\\www.baidu.cn">百度</a>
+		
+	</p>
+	<p>
+		<input type="button" name="" value="按钮" id="a">
+	</p>
+	<p>
+		<img src="05.jpg">
+	</p>
+	<p>
+		<input type="text" name="" id="b" placeholder="请填入">
+	</p>
+</body>
+</html>

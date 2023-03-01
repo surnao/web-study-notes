@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>跳动的心</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<style type="text/css">
+		div{
+			width: 200px ; background-color: pink;
+			height: 200px; margin: 200px auto;
+			/*向元素添加2d或3d旋转效果*/
+			transform: rotate(45deg);
+			/*滤镜，投影   filter定义了元素的可视效果（模糊还是饱和）前两个值确定了元素x和y轴上的偏移量，第三给值越大会越模糊，第四个值确定阴影的颜色，默认值是none（透明）*/
+			filter: drop-shadow(0px 0px 30px red);
+			/*调用动画*/
+			animation: jump .8s linear infinite;
+		}
+		/*动画*/
+		/*@keyframes:规则是设置动画创建动画，在规则内设置CSS眼视光样式和动画将逐步从当前的样式更改为新的样式*/
+		@keyframes jump{
+			/*动画开始的样子*/
+			0%{
+				transform: scale(1) rotate(45deg);
+			}
+			/*动画开始到一半的样子*/
+			60%{
+				transform: scale(1.2) rotate(45deg);
+			}
+			/*动画快结束的样子*/
+			80%{
+				transform: scale(1.8) rotate(45deg);
+			}
+			/*动画结束的样子*/
+			100%{
+				transform: scale(1) rotate(45deg);
+			}
+		}
+		/*在每个元素之前插入的内容和样式*/
+		div:before{
+			/*将内容设置为空*/
+			content: "";
+			/*将元素显示为块级元素*/
+			display: block;
+			width: 200px;height: 200px;
+			background-color: pink;
+			/*位置*/
+			position: relative;
+			left: -100px;
+			border-radius: 50%;
+		}
+		/*在每个元素之后插入的内容和样式*/
+		div:after{
+			/*将内容设置为空*/
+			content: "";
+			/*将元素显示为块级元素*/
+			display: block;
+			width: 200px;height: 200px;
+			background-color: pink;
+			/*位置*/
+			position: relative;
+			top: -300px;
+			border-radius: 50%;
+		}
+	</style>
+	<div></div>
+</body>
+</html>
