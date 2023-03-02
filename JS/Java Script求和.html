@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>求和</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+			function f1() {
+				var input1=document.getElementById('num1')
+				console.log(input1);
+				var input2=document.getElementById('num2')
+				console.log(input2);
+				var n=input1.value;
+				console.log(n);
+				var m=input2.value;
+				console.log(typeof(m));
+				var res = (+n) + (+m);
+				var span=document.getElementById('result')
+				console.log(span);
+				if (isNaN(n)) {
+					span.innerHTML="请输入数字";
+				}
+				else if(isNaN(m)){
+					span.innerHTML="请输入数字";
+				}
+				else{
+					span.innerHTML=res;
+				}
+			}
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="num1">+
+	<input type="text" name=""  id="num2">
+	<input type="button" name="" value="求和" onclick="f1()">
+	=<span id="result"></span>
+	
+</body>
+
+</html>

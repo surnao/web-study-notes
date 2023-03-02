@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>求平方</title>
+	<meta charset="utf-8">
+	<!-- （后台） 
+		判断输入的值是否是一个数，如果是一个数值，则计算平方，如果不是一个数值，则提示重新录入-->
+	<!-- 函数
+		1.获取文本框的值2.判断该值是否是数字3.是，则算平方，输出给span4.不是，将提示信息输出给span -->
+		<script type="text/javascript">
+			//1.如何获得网页上的元素
+			//document.getElementsById('');
+			//2.如何读写文本框的值
+			//读：input.value
+			//写：input.value="abc"
+			//3.如何读写span的值
+			//读：span.innerHTML
+			//写：span.innerHTML="abc"
+			function pf() {
+				//获取文本框
+				var input=document.getElementById('num');
+				console.log(input);
+				//获取文本框的值
+				var n=input.value;
+				console.log(n);
+				//获取span
+				var span=document.getElementById('result');
+				console.log(span);
+				//判断该值是否是数字
+				if (isNaN(n)) {
+					//不是数字，给予提示
+					span.innerHTML="请输入数字";
+				}
+					else{
+						//是数字，计算平方
+					span.innerHTML=n*n;
+					}
+			}
+		</script>
+</head>
+<body>
+		<input type="text" name="" id="num">
+		<input type="button" name="" value="平方" onclick="pf()">
+		=<span id="result"></span>
+</body>
+</html>

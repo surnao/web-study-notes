@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>变量声明</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		console.log("控制台打印");
+		//声明变量
+		var x;
+		console.log(x);
+		x=3;
+		console.log(x);
+		var y="hello";
+		console.log(y);
+		console.info("信息");
+		console.error("错误");
+		console.warn("警告");
+		//隐式转换
+		var s="hi";
+		var n=3.14;
+		var b=true;
+		console.log(s+n);
+		console.log(s+b);
+		console.log(n+b);
+		console.log(b+b);
+		//强制转换
+		console.log(n.toString()+1)
+		console.log(parseInt(n));
+		console.log(parseInt(5.6));
+		console.log(parseInt("abc"));
+		console.log("5.6");
+		console.log(parseFloat("4.4"));
+		//自动输出数据类型
+		var h="hello";
+		console.log(typeof(h));
+		console.log(typeof(n));
+		console.log(typeof(b));
+		//isNaN:判断被检测的表达式经过转换之后是否不是一个数字,如果被检测的表达式不是数字返回true,是数字则返回false
+		console.log(isNaN(56));
+		console.log(isNaN("56"));
+		console.log(isNaN("abc"));
+	</script>
+</head>
+<body>
+	<!-- 变量的声明：var
+	m默认值是undifined(未定义）-->
+	<p>你们吃了吗</p>
+	<!-- 数据类型：特殊类型：undefined未定义 内置对象（自身）：number,string,boolean
+	外部对象（浏览器）：window浏览器document文档对象  自定义对象：object(最简单) -->
+	<!-- 内置对象：不同的数据类型在计算过程中会自动进行转换。
+	隐式转换：
+	数字+字符串：数字会自动转成字符串
+	数字+布尔值：true转成1，false转成0
+	字符串+布尔值：布尔值转换成字符串true或false
+	布尔值+布尔值：布尔值转换成数值1或0 -->
+</body>
+</html>

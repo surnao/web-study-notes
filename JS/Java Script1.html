@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>事件定义</title>
+	<meta charset="utf-8">
+	<!-- 1.将JS封装成函数时，要用事件定义调用
+		 2.不封装的时候直接写，浏览器加载时会自动加载调用 -->
+	<script type="text/javascript">
+		//funcation是关键字，声明了一个函数
+		//f1()：函数名
+		//大括号内是函数体，JS中的函数不需要返回值类型
+		function f1() {
+			alert("你觉得JS难吗");
+		}
+	</script>
+	<script type="text/javascript" src="02.js"></script>
+</head>
+<body>
+	<!-- 事件定义式：用户在做出什么操作的时候调用js，就是js调用的时机 -->
+	<input type="button" name="" value="按钮1" onclick="alert('hi')">
+	<input type="button" name="" value="按钮2" ondblclick="f1()">
+	<input type="button" name="" value="按钮3" oncontextmenu="f2()">
+</body>
+</html>
